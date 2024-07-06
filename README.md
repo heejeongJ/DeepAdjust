@@ -2,7 +2,7 @@
 🫛 Fine-Tuning for Sentiment Analysis 🫛
 DeepAdjust is a comprehensive project aimed at performing advanced sentiment analysis using state-of-the-art tuning techniques on pre-trained language models. This project explores various methods such as fine-tuning, prompt tuning, p-tuning, and parameter-efficient fine-tuning (PEFT) to enhance model performance on sentiment analysis tasks.
 
-
+&nbsp;&nbsp;
 ## Project Structure
 DeepAdjust 프로젝트의 구조입니다. :)
 
@@ -61,7 +61,7 @@ SentimentAnalysis/
 
 
 
-
+&nbsp;&nbsp;
 ## Installation
 
 To use this project, follow these steps:
@@ -80,7 +80,7 @@ To use this project, follow these steps:
     ```
 
 
-
+&nbsp;&nbsp;
 ## Usage
 
 To run the main script, use the following command:
