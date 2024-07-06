@@ -7,7 +7,7 @@ This project explores various methods such as fine-tuning, prompt tuning, p-tuni
 
 &nbsp;&nbsp;
 ## Project Structure
-DeepAdjust 프로젝트의 구조입니다. :)
+
 
 ```bash
 SentimentAnalysis/
