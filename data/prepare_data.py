@@ -10,24 +10,25 @@ def prepare_data():
     test_texts = dataset["test"]["text"][:1000]
     test_labels = dataset["test"]["label"][:1000]
 
-
-
     # datasets를 텍스트 파일로 저장 (디렉토리 존재하지 않을 경우 생성)
-    os.makedirs('data', exist_ok=True)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    data_dir = os.path.join(current_dir, 'data')
+    os.makedirs(data_dir, exist_ok=True)
 
-    with open(os.path.join('data', 'train_texts.text'), 'w') as f:              # 데이터셋에서 텍스트와 레이블을 추출하여 텍스트 파일로 저장, 각 데이터셋의 텍스트와 레이블을 별도의 파일로 저장하여 이후에 쉽게 접근할 수 있도록 함
-        for item in train_texts:                                                # train_datasets text file로 저장
+    with open(os.path.join(data_dir, 'train_texts.txt'), 'w',
+              encoding='utf-8') as f:  # 데이터셋에서 텍스트와 레이블을 추출하여 텍스트 파일로 저장, 각 데이터셋의 텍스트와 레이블을 별도의 파일로 저장하여 이후에 쉽게 접근할 수 있도록 함
+        for item in train_texts:  # train_datasets text file로 저장
             f.write("%s\n" % item)
 
-    with open(os.path.join('data', 'train_labels.txt'), 'w') as f:              # train_labels text file로 저장
+    with open(os.path.join(data_dir, 'train_labels.txt'), 'w', encoding='utf-8') as f:  # train_labels text file로 저장
         for item in train_labels:
             f.write("%s\n" % item)
 
-    with open(os.path.join('data', 'test_texts.txt'), 'w') as f:                # test_datasets text file로 저장
+    with open(os.path.join(data_dir, 'test_texts.txt'), 'w', encoding='utf-8') as f:  # test_datasets text file로 저장
         for item in test_texts:
             f.write("%s\n" % item)
 
-    with open(os.path.join('data', 'test_labels.txt'), 'w') as f:               # test_labels text file로 저장
+    with open(os.path.join(data_dir, 'test_labels.txt'), 'w', encoding='utf-8') as f:  # test_labels text file로 저장
         for item in test_labels:
             f.write("%s\n" % item)
 

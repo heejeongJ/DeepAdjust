@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../models')
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, Trainer, TrainingArguments
-from bert_fine_tuning import IMDbDataset, load_data
+from models.bert_fine_tuning import IMDbDataset, load_data
 
 def evaluate_model(model_dir='results/fine_tuning'):
     train_texts, train_labels, test_texts, test_labels = load_data()
