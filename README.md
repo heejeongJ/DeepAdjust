@@ -1,5 +1,6 @@
 # DeepAdjust
 🫛 Fine-Tuning for Sentiment Analysis 🫛
+
 DeepAdjust is a comprehensive project aimed at performing advanced sentiment analysis using state-of-the-art tuning techniques on pre-trained language models. 
 
 This project explores various methods such as fine-tuning, prompt tuning, p-tuning, and parameter-efficient fine-tuning (PEFT) to enhance model performance on sentiment analysis tasks.
